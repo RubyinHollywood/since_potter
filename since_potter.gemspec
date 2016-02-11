@@ -7,9 +7,11 @@ Gem::Specification.new do |s|
   s.summary     = 'A countdown and stopwatch'
   s.description = 'A gem which can act as a countdown and stopwatch'
   s.version     = SincePotter::VERSION
+  s.email       = 'rubyinhollywood@gmail.com'
+  s.homepage    = 'https://github.com/RubyinHollywood/since_potter#readme'
   s.licenses    = ['MIT', 'WTFPL']
   s.author      = 'Ruby in Hollywood'
-  s.files       = ['bin/since_potter', 'lib/since_potter/version.rb']
+  s.files       = ['bin/since_potter', 'lib/since_potter/version.rb', 'lib/since_potter.rb']
 	s.executables = ['since_potter']
 end
 
