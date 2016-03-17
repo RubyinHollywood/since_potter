@@ -1,10 +1,4 @@
 #!/usr/bin/env ruby
+require 'since_potter'
 
-start = Time.now
-
-loop do
-  surpassed = "  #{(Time.now - start).to_i}"
-  print surpassed
-  print "\b" * surpassed.to_s.size
-  sleep 1
-end
+SincePotter.new
