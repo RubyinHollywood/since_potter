@@ -13,4 +13,3 @@ describe SincePotter do
     end
   end
 end
-
