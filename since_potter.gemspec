@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
   s.author      = 'Ruby in Hollywood'
   s.files       = ['bin/since_potter', 'lib/since_potter/version.rb', 'lib/since_potter.rb']
 	s.executables = ['since_potter']
+  s.add_runtime_dependency 'slop' 
   s.add_development_dependency 'minitest'
   s.add_development_dependency 'rake'
 end

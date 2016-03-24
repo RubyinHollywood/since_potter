@@ -1,4 +1,11 @@
 #!/usr/bin/env ruby
 require 'since_potter'
+require 'slop'
+
+opts = Slop.parse do |o|
+	o.on '-v', '--version', 'print the version' do
+		puts SincePotter::VERSION
+	end
+end
 
 SincePotter.new
