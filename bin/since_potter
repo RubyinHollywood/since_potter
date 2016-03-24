@@ -10,6 +10,10 @@ opts = Slop.parse do |unicorn|
 	unicorn.on '-h', '--help', 'print this menu' do
 		puts unicorn
 	end
+#We couldn't get slop to work by passing input
+#	unicorn.string '--antigoal', 'prints antigoal'
 end
+
+puts opts[:antigoal]
 
 SincePotter.new
