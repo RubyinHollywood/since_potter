@@ -2,9 +2,13 @@
 require 'since_potter'
 require 'slop'
 
-opts = Slop.parse do |o|
-	o.on '-v', '--version', 'print the version' do
+opts = Slop.parse do |unicorn|
+	unicorn.on '-v', '--version', 'print the version' do
 		puts SincePotter::VERSION
+	end
+
+	unicorn.on '-h', '--help', 'print this menu' do
+		puts unicorn
 	end
 end
 
