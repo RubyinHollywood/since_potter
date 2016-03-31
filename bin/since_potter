@@ -15,7 +15,6 @@ opts = Slop.parse do |unicorn|
   unicorn.string '--goal', 'prints goal'
 end
 
-puts opts[:antigoal]
+timer = SincePotter.new goal: opts[:goal], antigoal: opts[:antigoal]
 
-timer = SincePotter.new
 timer.start
