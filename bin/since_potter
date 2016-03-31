@@ -3,17 +3,19 @@ require 'since_potter'
 require 'slop'
 
 opts = Slop.parse do |unicorn|
-	unicorn.on '-v', '--version', 'print the version' do
-		puts SincePotter::VERSION
-	end
+  unicorn.on '-v', '--version', 'print the version' do
+    puts SincePotter::VERSION
+  end
 
-	unicorn.on '-h', '--help', 'print this menu' do
-		puts unicorn
-	end
-#We couldn't get slop to work by passing input
-#	unicorn.string '--antigoal', 'prints antigoal'
+  unicorn.on '-h', '--help', 'print this menu' do
+    puts unicorn
+  end
+
+  unicorn.string '--antigoal', 'prints antigoal'
+  unicorn.string '--goal', 'prints goal'
 end
 
 puts opts[:antigoal]
 
-SincePotter.new
+timer = SincePotter.new
+timer.start
