@@ -6,4 +6,4 @@
 
 [![Issue Count](https://codeclimate.com/github/RubyinHollywood/since_potter/badges/issue_count.svg)](https://codeclimate.com/github/RubyinHollywood/since_potter)
 
-Since Potter is a project made by the Ruby in Hollywood MeetUp.
+Since Potter is a project made by the Ruby in Hollywood Meetup.
